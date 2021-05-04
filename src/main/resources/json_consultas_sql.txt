@@ -1,0 +1,27 @@
+Venta - json:
+  post -  localhost:8081/ventas
+  
+    {
+        "fecha": "2021-05-03T01:00:00.000Z",
+        "importe": "100.00",
+        "persona": {
+            "id": 1
+        },
+        "detalleVenta": [
+            {
+                "producto": {"id":1},
+                "cantidad": 1
+            },
+            {
+                "producto": {"id":2},
+                "cantidad": 1
+            }
+        ]
+    }
+    
+  consultas - sql:
+  
+    SELECT * FROM persona LIMIT 10
+    SELECT * FROM producto LIMIT 10
+    SELECT * FROM venta LIMIT 10
+    SELECT * FROM detalle_venta LIMIT 10
